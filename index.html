@@ -8,8 +8,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
     <title>TestAR</title>
     <style>
         html {
@@ -141,9 +139,9 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/Build.loader.js";
         const config = {
-            dataUrl: buildUrl + "/bd322b07c76494374f960ce0c20c51db.data.br",
-            frameworkUrl: buildUrl + "/0bb77496167c933d23fb5daa3783cd3a.js.br",
-            codeUrl: buildUrl + "/863330095a8d51dacbecdabb617c8ecf.wasm.br",
+            dataUrl: buildUrl + "/ced0dc037261a55ace736a80b0efd0da.data",
+            frameworkUrl: buildUrl + "/57251f4ace581293bb197eb959723acf.js",
+            codeUrl: buildUrl + "/691890a3b62150b383e4c57043ad69ce.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "TestAR",
@@ -210,10 +208,6 @@
         }
 
     </script>
-    <py-env>
-        - zmq
-    </py-env>
-    <py-script src="./server.py"></py-script>
 </body>
 
 </html>
