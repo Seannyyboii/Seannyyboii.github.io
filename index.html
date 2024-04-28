@@ -210,9 +210,9 @@
         }
 
     </script>
-    <py-env>
-        - zmq
-    </py-env>
+    <py-config type="toml">
+        packages = ["zmq", "pyzmq"]
+      </py-config>
     <py-script src="./server.py"></py-script>
 </body>
 
