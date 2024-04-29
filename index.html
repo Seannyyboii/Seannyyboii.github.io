@@ -141,9 +141,9 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/Build.loader.js";
         const config = {
-            dataUrl: buildUrl + "/2a07ee11c90be54b93634ae9054f9642.data",
-            frameworkUrl: buildUrl + "/57251f4ace581293bb197eb959723acf.js",
-            codeUrl: buildUrl + "/691890a3b62150b383e4c57043ad69ce.wasm",
+            dataUrl: buildUrl + "/bc299ed9bcec12bcffaf32e070935fdd.data",
+            frameworkUrl: buildUrl + "/a41ee99d04ad05674b476c924b5be6d7.js",
+            codeUrl: buildUrl + "/fffe563c6a86afc6e2a871d24d355151.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "TestAR",
@@ -210,9 +210,9 @@
         }
 
     </script>
-    <py-config type="toml">
-        packages = ["zmq", "pyzmq"]
-      </py-config>
+    <py-env>
+        - zmq
+    </py-env>
     <py-script src="./server.py"></py-script>
 </body>
 
