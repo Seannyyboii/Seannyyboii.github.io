@@ -1,9 +1,3 @@
-#
-#   Hello World server in Python
-#   Binds REP socket to tcp://*:5555
-#   Expects b"Hello" from client, replies with b"World"
-#
-
 import zmq
 import numpy as np
 
@@ -49,11 +43,9 @@ while True:
         # Get the handedness
         handType = hand["type"]
 
-        # print(lmList)
+        print(lmList)
         for lm in lmList:
             data.extend([lm[0],height - lm[1],lm[2]])
-        # print(data)
-            #socket.send(str.encode(str(data)))
         
         # Check if a second hand is detected
         if len(hands) == 2:
@@ -67,11 +59,4 @@ while True:
             for lm in lmList1:
                 data1.extend([lm[0],height - lm[1],lm[2]])
 
-    #img = cv2.resize(img, (0,0), None, 0.5,0.5)
-    #cv2.imshow("Image", img)
-    # cv2.waitKey(1)
-
-    #  Send reply back to client
-    #  In the real world usage, after you finish your work, send your output here
-    # socket.send(b"World")
     socket.send(str.encode(handType + str(data) + "|" + handType1 + str(data1)))
