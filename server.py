@@ -4,12 +4,7 @@
 #   Expects b"Hello" from client, replies with b"World"
 #
 
-import httpimport
-
-with httpimport.github_repo('zeromq', 'pyzmq', ref='main'):
-    import zmq
-    
-# import zmq
+import zmq
 import numpy as np
 
 import cv2
