@@ -3,6 +3,9 @@ import threading
 
 from base64 import b64decode
 
+import micropip
+micropip.install("numpy")
+
 import numpy as np
 
 import cv2
