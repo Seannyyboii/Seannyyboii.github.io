@@ -9,7 +9,7 @@ import mediapipe as mp;
 import cv2
 import math
 
-cv2.setNumThreads(4)
+cv2.setNumThreads(4) 
 
 # Parameters
 width, height = 1280, 720
